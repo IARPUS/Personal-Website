@@ -1,0 +1,131 @@
+.urls {
+  display: grid;
+  grid-template-columns: [line-1] 50% [line-2] 50% [line-3];
+  grid-template-rows: [line-1] 25% [line-2] 25% [line-3] 25% [line-4] 25% [line-5];
+  height: 50%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: 2%;
+  margin-top: 5%;
+}
+
+.resumeButton {
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  height: 80%;
+  width: auto;
+  grid-column-start: line-1;
+  grid-column-end: line-2;
+  grid-row-start: line-2;
+  grid-row-end: line-3;
+  background-color: transparent;
+}
+
+.resumeIcon {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  animation: bobbing 1.5s infinite;
+}
+
+.gitHubButton {
+  border: none;
+  grid-column-start: line-2;
+  grid-column-end: line-3;
+  grid-row-start: line-2;
+  grid-row-end: line-3;
+  margin: auto;
+  cursor: pointer;
+  height: 90%;
+  width: auto;
+  background-color: transparent;
+}
+
+.gitHubIcon {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  animation: bobbing 1.5s infinite;
+}
+
+.linkedInButton {
+  border: none;
+  grid-column-start: line-1;
+  grid-column-end: line-2;
+  grid-row-start: line-3;
+  grid-row-end: line-4;
+  margin: auto;
+  cursor: pointer;
+  height: 90%;
+  width: auto;
+  background-color: transparent;
+}
+
+.linkedInIcon {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  animation: bobbing 1.5s infinite;
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.img__description1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__description2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__description3 {
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.resumeButton:hover .img__description1 {
+  visibility: visible;
+  opacity: 1;
+}

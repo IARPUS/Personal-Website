@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+  margin: 0%;
+}
+
+body {
+  height: 100%;
+  margin: 0%;
+}
+
+.background {
+  background-image: url("./Components/images/background1.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: [line-1] 28% [line-2]50% [line-3]22% [line-4];
+  grid-template-rows: [line-4] 100%;
+  height: 100%;
+}
+
+.middle-column {
+  grid-column-start: line-1;
+  grid-column-start: line-2
+}
+
+.right-column {
+  grid-column-start: line-3;
+  grid-column-end: line-4;
+}

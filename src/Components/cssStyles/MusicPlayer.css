@@ -1,0 +1,164 @@
+.player {
+  margin-top: 20%;
+  display: grid;
+  grid-template-columns: [line-1] 25% [line-2] 25% [line-3] 25% [line-4] 25% [line-5];
+  grid-template-rows: [line-1] 25% [line-2] 25% [line-3] 50% [line-4];
+  height: 40%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timer {
+  display: flex;
+  grid-column-start: line-1;
+  grid-column-end: line-5;
+  grid-row-start: line-3;
+  grid-row-end: line-4;
+  grid-column-start: line-1;
+  grid-column-end: line-5;
+  grid-row-start: line-2;
+  grid-row-end: line-3;
+  width: 100%;
+}
+
+.current {
+  margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: 3%;
+  margin-top: auto;
+  font-size: 0.8vw;
+}
+
+.max {
+  margin-right: 20%;
+  margin-left: auto;
+  margin-bottom: 3%;
+  margin-top: auto;
+  font-size: 0.8vw;
+}
+
+.buttons {
+  grid-column-start: line-1;
+  grid-column-end: line-5;
+  grid-row-start: line-3;
+  grid-row-end: line-4;
+  width: 100%;
+  display: grid;
+  grid-template-columns: [line-1] 25% [line-2] 25% [line-3] 25% [line-4] 25% [line-5];
+  grid-template-rows: [line-1] 75% [line-2] 25% [line-3];
+
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.startButton {
+  border: none;
+  grid-column-start: line-2;
+  grid-column-end: line-3;
+  grid-row-start: line-1;
+  grid-row-end: line-2;
+  width: 60%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.unPressedPlayButtonImage {
+  margin: auto;
+  height: 600%;
+  width: 100%;
+  animation: bobbing 1.5s infinite;
+
+}
+
+.unPressedStopButtonImage {
+  margin: auto;
+  height: 600%;
+  width: 100%;
+  animation: bobbing 1.5s infinite;
+}
+
+.stopButton {
+  border: none;
+  grid-column-start: line-3;
+  grid-column-end: line-4;
+  grid-row-start: line-1;
+  grid-row-end: line-2;
+  width: 60%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.unPressedPrevButton {
+  grid-column-start: line-1;
+  grid-column-end: line-2;
+  grid-row-start: line-1;
+  grid-row-end: line-2;
+  margin-left: 75%;
+  margin-right: auto;
+}
+
+.unPressedNextButton {
+  grid-column-start: line-4;
+  grid-column-end: line-5;
+  grid-row-start: line-1;
+  grid-row-end: line-2;
+  margin-left: auto;
+  margin-right: 75%;
+}
+
+.slider-background {
+  grid-column-start: line-1;
+  grid-column-end: line-5;
+  grid-row-start: line-2;
+  grid-row-end: line-3;
+  margin: auto;
+  background-color: #581608;
+  width: 65%;
+  border-radius: 10rem;
+  height: 20%;
+}
+
+.slider-background input.my-slider {
+  display: block;
+  margin: auto;
+  width: 95%;
+  height: 90%;
+}
+
+.sound-slider-background {
+  grid-column-start: line-2;
+  grid-column-end: line-4;
+  grid-row-start: line-3;
+  grid-row-end: line-4;
+  margin: auto;
+  background-color: #581608;
+  width: 50%;
+  border-radius: 10rem;
+  height: 5%;
+}
+
+.sound-slider-background input.my-sound-slider {
+  display: block;
+  margin: auto;
+  width: 95%;
+  height: 80%;
+}
